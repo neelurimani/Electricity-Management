@@ -1,0 +1,560 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* navbar logo and image */
+#navbar {
+  position: relative;
+  top: 0px;
+  height: 90px;
+  width: 100%;
+  font-family: 'PT Serif', serif;
+  font-family: 'Xanh Mono', monospace;
+  display: flex;
+  align-items: center;
+}
+
+#logo {
+  margin: 20px 25px;
+}
+
+#logo img {
+  height: 80px;
+  width: 90px;
+  margin: 20px 20px;
+  /* background-color: white; */
+}
+
+#logo img:hover {
+  height: 60px;
+  margin: 20px 20px;
+  
+}
+
+/*  nav bar list style */
+#navbar ul {
+  display: flex;
+}
+
+#navbar::before {
+  content: "";
+  background-color:white;
+  position: absolute;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+}
+
+#navbar ul {
+  display: flex;
+}
+
+#navbar ul li {
+  /* color:blanchedalmond */
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+#navbar ul li a {
+  color:black;
+  display: block;
+  padding: 3px 22px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#navbar ul li a:hover {
+  color: goldenrod;
+  /* background-color: black 0.4; */
+ 
+}
+
+* {
+  box-sizing: border-box
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0
+}
+
+.mySlides {
+  display: none;
+  height:100%;
+  width:100%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  
+  height: 100%;
+  position: relative;
+  width: 100%;
+
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.slideshow-container img {
+
+  height: 400px;
+
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+*/
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+/* @keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+/* On smaller screens, decrease text size *//*
+@media only screen and (max-width: 300px) {
+
+  .prev,
+  .next,
+  .text {
+    font-size: 11px
+  }
+} */
+
+/* HOME CUSTOMER SECTION */
+
+#homecustomercorner{
+  background-color: white;
+  border-bottom: black 1px solid;
+  padding: 10px 0px ;
+ 
+}
+section#homecustomercorner{
+  display: block;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  block-size: cover !important;
+  box-sizing: border-box !important;
+  text-align: center;
+  font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+  
+}
+section::before,section::after{
+  content:"";
+  display: table;
+  box-sizing: border-box;
+  font-family: 'Open Sans',Arial,Helvetica,sans-serif;
+font-size: 16px;
+line-height: 1.5;
+}
+.container{
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+margin-left: -15px;
+padding-top: 20px;
+padding-bottom: 20px;
+margin: 0 !important;
+border-right: rgba(0,0,0,0.1) 1px solid;
+}
+.col{
+flex-basis: 0;
+flex-grow: 1;
+max-width: 100%;
+}
+auto {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.box-icon-outer{
+  text-decoration: none !important;
+display: block;
+}
+.col .media-box-icon .box-icon-outer img
+{
+  height:100px;
+  width:100px;
+}
+  /* /blue bg imfooration/ */
+ 
+  .db-imformation{
+    color: black;
+    background-color:aqua;
+    display: block;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    block-size: cover ;
+    box-sizing: border-box ;
+    text-align: center;
+    /* background-color:rgb(3, 3, 100); */
+    background-color: #00285e ;
+    background: url("matthew-henry-yETqkLnhsUI-unsplash.jpg") no-repeat center center/cover;
+
+
+  }
+  h3{
+    font-style: bold;
+    color: #fdb927;
+    padding-top:80px ;
+    padding-bottom: 80px;
+    padding-left: 10px;
+    margin-right: 10px;
+    font-size: 30px;
+    font-family: 'Open Sans',Arial,Helvetica,sans-serif;
+  }
+  #imf{
+    color:white;
+    font-size:18px ;
+    padding-bottom: 60px;
+    margin-left:20px;
+    margin-right:20px;
+    font-family: 'Open Sans',Arial,Helvetica,sans-serif;
+
+  }
+  #lm{
+    color: #fdb927;
+    padding-bottom: 60px;
+    border:2px black ;
+    font-size:25px;
+  }
+
+
+  /* for card block */
+section#option{
+ padding-top: 40px; 
+ padding-bottom: 20px; 
+ padding-left: 90px;
+ padding-right: 90px;
+ display: block;
+ position: relative;
+ /* background: url("bgoption.jpg") no-repeat center center/cover; */
+}
+.container1{
+  position: relative;
+  display:flex;
+  justify-content: center;
+  width: 100%;
+padding-right: 15px;
+padding-left: 15px;
+padding-bottom: 40px;
+margin-right: auto;
+margin-left: auto;
+}
+.container2{
+  position: relative;
+  display:flex;
+  justify-content: center;
+  width: 100%;
+padding-right: 15px;
+padding-left: 15px;
+margin-right: auto;
+margin-left: auto;
+}
+.col1{
+  position: relative;
+width: 100%;
+min-height: 1px;
+padding-right: 15px;
+padding-left: 15px;
+
+
+}
+.card{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background-color: #fff;
+  justify-content: center;
+  border-radius: .25rem;
+  border: 1px black solid;
+}
+.card-image{
+  height: 300px;
+  width: auto;
+  background-color:#ffc107;
+  
+
+}
+h4{
+  display: flex;
+  justify-content: center;
+  margin-top: 69px;
+  color: white;
+
+  font-size: 26px;
+}
+.col2{
+  position: relative;
+width: 100%;
+min-height: 1px;
+padding-right: 15px;
+padding-left: 15px;
+
+}
+.col3{
+  position: relative;
+width: 100%;
+min-height: 1px;
+padding-right: 15px;
+padding-left: 15px;
+
+}
+.card-block{
+  font-size: 15px;
+  padding: 20px 10px;
+  width: 400px;
+  height: 190px;
+}
+
+
+.card-image#card1:hover{
+ background: url("facilities.jpg") no-repeat center center/cover;
+ opacity: 0.5;
+}
+.card-image#card2:hover{
+ background: url("fibernet.jpg") no-repeat center center/cover;
+ opacity: 0.5;
+}
+.card-image#card3:hover{
+ background: url("videos.jpg") no-repeat center center/cover;
+ opacity: 0.5;
+}
+.card-image#card4:hover{
+ background: url("customer.jpg") no-repeat center center/cover;
+ opacity: 0.5;
+}
+.card-image#card5:hover{
+ background: url("supplier.jpg") no-repeat center center/cover;
+ opacity: 0.5;
+}
+.card-image#card6:hover{
+ background: url("matthew-henry-yETqkLnhsUI-unsplash.jpg") no-repeat center center/cover;
+ opacity: 0.5;
+}
+/* this is for last container */
+.lcontain {
+  height: 500px;
+  width:100%;
+  background-color: #00285e;
+}
+
+
+.incontain{
+  display: flex;
+  justify-content: center;
+    height: 100%;
+    margin: 50px;
+    padding: 50px;
+}
+
+
+div#incontain1\ {
+ 
+  width: 100%;
+  height: 50vh;
+  margin: 50px;
+    padding: 20px;
+    color: white;
+}
+
+
+div#incontain1\   #imglg {
+  height: 10px;
+  width: 10px;
+  display: inline-block;
+
+}
+
+div#incontain1\   p{
+  font-size: 10px;
+  padding-top: 5px;
+}
+
+
+div#incontain2\ {
+  color: white;
+  width: 100%;
+  height: 50vh;
+  margin-left: 50px;
+}
+/* this is for last container */
+.lcontain {
+  height: 500px;
+  width:100%;
+  background-color: #00285e;
+}
+
+
+.incontain{
+  display: flex;
+  justify-content: center;
+    height: 100%;
+}
+
+   
+
+
+div#incontain1\ {
+  width: 100%;
+  height: 50vh;
+  margin: 50px;
+    padding: 20px;
+    color: white;
+}
+
+#imagelg > img:nth-child(1) {
+  width: 105px;
+height: 96px;
+}
+
+div#incontain1\   p{
+  font-size: 16px;
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
+
+#incontain1\  > img:nth-child(3) {
+  width: 31px;
+  height: 38px;
+}
+
+#incontain1\  > img:nth-child(6) {
+  width: 40px;
+  height: 40px;
+}
+
+#email > img:nth-child(1) {
+  width: 42px;
+  height: 40px;
+ }
+ 
+
+
+div#incontain2\ {
+  color: white;
+  width: 100%;
+  height: 50vh;
+  font-size: 20px;
+  margin-left: 50px;
+  line-height: 50px;
+  margin: 50px;
+padding: 20px;
+}
+
+div#incontain2 h4{
+  color: red;
+}
+
+
+
+/* footer */
+footer{
+  background: black;
+  color: white;
+  padding: 9px 20px;
+  text-align: center;
+}
+
+
+
+
+            
+		      
+
+	

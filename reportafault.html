@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+    
+      *{
+        padding: 0px;
+        margin: 0px;
+        
+    }
+    /*  .bgimg{
+        position: absolute;
+        opacity: 0.5;
+        height:110% ;
+        width:100%;
+        
+        z-index: -10;
+        
+    }*/
+      /* navbar logo and image */
+      #navbar {
+       
+        position: relative;
+        top: 0px;
+        height: 90px;
+        width: 100%;
+        font-family: 'PT Serif', serif;
+        font-family: 'Xanh Mono', monospace;
+        display: flex;
+        align-items: center;
+      }
+      
+      #logo {
+        margin: 20px 25px;
+      }
+      
+      #logo img {
+        height: 80px;
+        width: 90px;
+        margin: 20px 20px;
+        /* background-color: white; */
+      }
+      
+      #logo img:hover {
+        height: 60px;
+        margin: 20px 20px;
+        
+      }
+      
+      /*  nav bar list style */
+      #navbar ul {
+        display: flex;
+      }
+      
+      #navbar::before {
+        content: "";
+        background-color:white;
+        position: absolute;
+        top: 0px;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.4;
+        top: 0;
+        left: 0;
+      }
+      
+      #navbar ul {
+        display: flex;
+      }
+      
+      #navbar ul li {
+        /* color:blanchedalmond */
+        list-style: none;
+        font-size: 1.3rem;
+      }
+      
+      #navbar ul li a {
+        color:black;
+        display: block;
+        padding: 3px 22px;
+        text-decoration: none;
+        font-weight: bold;
+        font-family: 'Open Sans', sans-serif;
+      }
+      
+      #navbar ul li a:hover {
+        color: goldenrod;
+        /* background-color: black 0.4; */
+       
+      }
+      
+   
+      .formdesign {
+        
+        font-size: 1.4rem;
+      margin: 1rem;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+
+    .formdesign input {
+        width: 50%;
+        padding: 0.8rem 0.8rem;
+        border: 2px black solid;
+        margin: 0.9 rem;
+        border-radius: 0.4px;
+        border-radius: 10px;
+
+    }
+
+
+    .formerror {
+        color: red;
+    }
+    
+    .heading{
+        width: 95rem;
+        height: 80px;
+     background-color:#fdb927;
+     display: flex;
+     justify-content: center;
+     margin-bottom: 1rem;
+   
+    }
+    .head{
+        font-size: 30px;
+        color: aliceblue;
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight:bold;
+        padding: 1rem;
+        
+    }
+    button{
+     
+        width: 150px;
+        height: 50px;
+    }
+    /* footer */
+footer{
+  background: black;
+  color: white;
+  padding: 9px 20px;
+  text-align: center;
+}
+body{
+  background-image: linear-gradient( to left, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% ) ;
+}
+</style>
+
+<body>
+    
+    <nav id="navbar">
+       
+        <div id="logo">
+          <img src="logo.png" alt="CEB" width="70" height="70">
+        </div>
+        <ul>
+          <li class="item"><a href="INDEX.html">Home </a></li>
+          <li class="item"><a href="login.html"> Login</a></li>
+                    <li class="item"><a href="aboutus.html"> About Us </a></li>
+          <li class="item"><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <!-- <img src="./reportafault.jpg" class="bgimg" ></img> -->
+  
+      
+      <div class="heading">
+        <div class="head">REPORT A FAULT</div>
+    </div>
+    
+<form aciton ="/myaction.php" name="myForm" onsubmit="return validateForm()" method="post">
+    <div class="formdesign" id="name">
+        Name: <input type="text" name="fname" required><b><span class="formerror"> </span></b>
+    </div>
+    <div class="formdesign" id="phone">
+        Phone: <input type="phone" name="fphone" required><b><span class="formerror"></span></b>
+    </div>
+    <div class="formdesign">
+        Fault Address: <input type="text" id="address" name="address" required maxlength="255">
+    </div>
+
+
+    <div class=formdesign id="landmarks">
+        <label for="landmarks">Landmarks:</label>
+        <input type="text" id="landmarks" name="landmarks" required maxlength="255">
+    </div>
+    <div class="formdesign" id="busphone">
+    Contractor Phone: <input type="phone" name="cphone" required><b><span class="formerror"></span></b>
+    </div>
+    <div class="formdesign" id="account">
+    Account number: <input type="number" name="account" min="21000" max="31000"required><b><span class="formerror"></span></b>
+    </div>
+
+
+    <div class="formdesign" id="fault">
+        <label for="fault_type_id">Type of fault: </label>
+        <select name="fault">
+            <option value=""></option>
+            <option>ACCIDENT AGAINST CEB NETWORK</option>
+            <option value=>DAMAGED APPLIANCES</option>
+            <option>DIM LIGHT</option>
+            <option>ELECTRIC SHOCK</option>
+            <option>ELECTRICITY FRAUD</option>
+            <option>HIGH VOLTAGE</option>
+            <option>HOUSE ALIVE</option>
+            <option>FIRE OUTBREAK</option>
+            <option>INTERMITTENT LIGHT</option>
+            <option>LOPPING</option>
+            <option>BRANCH/TREE ON MAIN LINE</option>
+            <option>BRANCH/TREE ON SERVICE LINE</option>
+            <option>LOW VOLTAGE</option>
+            <option>METER BOX BROKEN</option>
+            <option>METER BURNING</option>
+            <option>METER BOARD ROTTEN</option>
+            <option>METER HANGING</option>
+            <option>METER NOISY</option>
+            <option>NEUTRAL ALIVE</option>
+            <option>NO LIGHT BUSINESS</option>
+            <option>NO LIGHT RESIDENTIAL</option>
+            <option>POLE BROKEN</option>
+            <option>POLE LEANING</option>
+            <option>POLE ON FIRE</option>
+            <option>POLE ROTTEN/RUSTED</option>
+            <option>SERVICE LINE BROKEN</option>
+            <option>SERVICE LINE SLACK</option>
+            <option>SSDG/SOLAR PV FAULTY</option>
+            <option>SPARK ON HOUSE</option>
+            <option>SPARK ON POLE</option>
+            <option>SPARK ON SERVICE LINE</option>
+            <option>SPARK ON STREET LIGHTING</option>
+            <option>SPARK UNDER METER</option>
+            <option>STREET LIGHTING BLACKOUT
+            </option>
+            <option>STREET LIGHTING NIGHT AND DAY</option>
+            <option>VOLTAGE FLUCTUATION</option>
+            <option>WATER FLOODING INSTALLATION
+            </option>
+        </select>
+    </div>
+
+
+    <div class="formdesign" id="upload">
+        <label for="files">Upload files and images</label>
+        <input type="file">
+    </div>
+
+
+    <div class="formdesign" id="comment">
+
+        <label>Comments/Description of Problem *</label>
+        <textarea id="comments"></textarea>
+
+    </div> 
+    <div class="formdesign">
+    <button type="submit" value="submit">SUBMIT</button>
+    <div class="block font-lato">We'll get back to you within 48 hours</div>
+</div>
+</form>
+<footer>
+  <div class="center">
+      Copyright &copy; 2019 All rights reserved ,www.CEB.com. 
+  </div>
+</footer>
+
+<script>
+    function seterror(id, error) {
+        element = document.getElementById(id);
+        element.getElementsByClassName('formerror')[0].innerHTML = error;
+    }
+    function validateForm() {
+        var returnval =true;
+        var name = document.forms['myForm']["fname"].value;
+       
+        if (name.length<5){
+            seterror("name","*Length of name is too short ");
+            returnval=false;
+        }
+        var phone = document.forms['myForm']["fphone"].value;
+        if (phone.length != 10){
+            seterror("phone", "*Phone number should be of 10 digits!");
+            returnval = false;
+        }
+        var busphone = document.forms['myForm']["fphone"].value;
+        if (busphone.length != 10){
+            seterror("busphone", "*Phone number should be of 10 digits!");
+            returnval = false;
+        }
+      
+    return returnval;
+}
+</script>
+</body>
+
+</html>

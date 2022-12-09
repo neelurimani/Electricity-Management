@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+          }  
+          /* navbar logo and image */
+          #navbar {
+           
+              position: relative;
+              top: 0px;
+              height: 90px;
+              width: 100%;
+              font-family: 'PT Serif', serif;
+              font-family: 'Xanh Mono', monospace;
+              display: flex;
+              color: goldenrod;
+              align-items: center;
+              border-bottom:5px black solid;
+            }
+            
+            #logo {
+              margin: 20px 25px;
+            }
+            
+            #logo img {
+              height: 80px;
+              width: 90px;
+              margin: 20px 20px;
+              /* background-color: white; */
+            }
+            
+            #logo img:hover {
+              height: 60px;
+              margin: 20px 20px;
+              
+            }
+            
+            /*  nav bar list style */
+            #navbar ul {
+              display: flex;
+              
+            }
+            
+            #navbar::before {
+              content: "";
+              background-color:white;
+              position: absolute;
+              top: 0px;
+              height: 100%;
+              width: 100%;
+              z-index: -1;
+              opacity: 0.4;
+              top: 0;
+              left: 0;
+            }
+            
+            #navbar ul {
+              display: flex;
+            }
+            
+            #navbar ul li {
+              /* color:blanchedalmond */
+              list-style: none;
+              font-size: 1.3rem;
+              
+            }
+            
+            #navbar ul li a {
+              color:black;
+              display: block;
+              padding: 3px 22px;
+              text-decoration: none;
+              font-weight: bold;
+              font-family: 'Open Sans', sans-serif;
+              
+            }
+            
+            #navbar ul li a:hover {
+              color:#fdb927;
+              /* background-color: black 0.4; */
+            }
+            /*HEADING*/
+            .heading{
+                height: 50px;
+             background-color:#fdb927;
+             display: flex;
+             justify-content: center;
+             padding-top: 10px;
+            }
+            .head{
+                font-size: 30px;
+                color: aliceblue;
+                font-family:Arial, Helvetica, sans-serif;
+                font-weight:bold;
+            }
+            .container{
+                margin-right: 15px;
+                margin-left: 15px;
+                padding-left:auto;
+                padding-right:auto;
+            }
+            p{
+                display: block;
+                line-height: 1.5;
+                font-size: 16px;
+                font-family: 'Open Sans',Arial,Helvetica,sans-serif;
+                padding-left:100px;
+                padding-right:100px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            img{
+                height: 92vh;
+                width: 92vw;
+                margin: 45px;
+            }
+            /* footer */
+footer{
+  background: black;
+  color: white;
+  padding: 9px 20px;
+  text-align: center;
+}
+
+    </style>
+</head>
+<body>
+  <!-- navigation bar  -->
+<nav id="navbar">
+    <div id="logo">
+      <img src="logo.png" alt="CEB" width="70" height="70">
+    </div>
+    <ul>
+      <li class="item"><a href="INDEX.html">Home </a></li>
+      <li class="item"><a href="login.html"> Login</a></li>
+      <li class="item"><a href="aboutus.html"> About Us </a></li>
+      <li class="item"><a href="contactus.html">Contact Us</a></li>
+    </ul>
+  </nav> 
+<div class="heading">
+    <div class="head">ABOUT US</div>
+</div>
+<div class="container">
+    <p>The Central Electricity Board (CEB) is a parastatal body wholly owned by the Government of Mauritius and operating under the aegis of the Ministry of Energy and Public Utilities. Established in 1952 and empowered by the Central Electricity Board Act 1963, the CEB's business is to "prepare and carry out development schemes with the general object of promoting, coordinating and improving the generation, transmission, distribution and sale of electricity" in Mauritius.</p>
+    <p>The CEB produces around 40% of the country's total power requirements from its 4 thermal power station and 10 hydroelectric plants; the remaining 60% being purchased from Independent Power Producers. Currently, the CEB is the sole organisation responsible for the transmission, distribution and supply of electricity to the population. It employs around 2,200 people.</p>
+
+    <img src="organigram_new.jpg">
+</div>
+<footer>
+  <div class="center">
+      Copyright &copy; 2019 All rights reserved ,www.CEB.com. 
+  </div>
+</footer>
+</body>
+</html>

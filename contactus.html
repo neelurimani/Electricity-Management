@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+*{
+  margin: 0px;
+  padding: 0px;
+}  
+/* navbar logo and image */
+#navbar {
+ 
+    position: relative;
+    top: 0px;
+    height: 90px;
+    width: 100%;
+    font-family: 'PT Serif', serif;
+    font-family: 'Xanh Mono', monospace;
+    display: flex;
+    color: goldenrod;
+    align-items: center;
+    border-bottom:5px black solid;
+  }
+  
+  #logo {
+    margin: 20px 25px;
+  }
+  
+  #logo img {
+    height: 80px;
+    width: 90px;
+    margin: 20px 20px;
+    /* background-color: white; */
+  }
+  
+  #logo img:hover {
+    height: 60px;
+    margin: 20px 20px;
+    
+  }
+  
+  /*  nav bar list style */
+  #navbar ul {
+    display: flex;
+    
+  }
+  
+  #navbar::before {
+    content: "";
+    background-color:white;
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+  }
+  
+  #navbar ul {
+    display: flex;
+  }
+  
+  #navbar ul li {
+    /* color:blanchedalmond */
+    list-style: none;
+    font-size: 1.3rem;
+    
+  }
+  
+  #navbar ul li a {
+    color:black;
+    display: block;
+    padding: 3px 22px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    
+  }
+  
+  #navbar ul li a:hover {
+    color: goldenrod;
+    /* background-color: black 0.4; */
+  }
+  
+
+/* tables*/
+.container {
+    width: 100%;
+    height: 100%;
+   
+   
+}
+ .image{
+  background: url(Web_Photo_Editor.jpg) no-repeat center center/cover ;
+  
+  display: flex;
+   width: 100%;
+   height: auto;
+   justify-content: center;
+   
+    
+}
+.table{
+  
+padding: 10px;
+border-radius: 5px;
+margin: 50px;
+    border: black 2px solid;
+    width: fit-content;
+    height: auto;
+    font-size:1.2em;
+    background-image: linear-gradient( to left, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% ) ;
+
+    line-height: 2;
+    border-collapse: collapse;
+}
+td:hover{
+  background:grey;
+}
+.table tr,th,td{
+  border-collapse: collapse;
+    border-top: black 2px solid;
+    padding: 10px;
+}
+.heading{
+  width: 100%;
+  height: 80px;
+background-color:#fdb927;
+display: flex;
+justify-content: center;
+
+}
+.head{
+  font-size: 30px;
+  color: aliceblue;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight:bold;
+  padding: 1rem;
+  
+}
+/* footer */
+footer{
+  background: black;
+  color: white;
+  padding: 9px 20px;
+  text-align: center;
+}
+
+
+</style>
+<body>
+<!-- navigation bar  -->
+<nav id="navbar">
+    <div id="logo">
+      <img src="logo.png" alt="CEB" width="70" height="70">
+    </div>
+    <ul>
+      <li class="item"><a href="INDEX.html">Home </a></li>
+      <li class="item"><a href="login.html"> Login</a></li>
+      <li class="item"><a href="aboutus.html"> About Us </a></li>
+      <li class="item"><a href="contactus.html">Contact Us</a></li>
+    </ul>
+  </nav> 
+  <div class="heading">
+    <div class="head">CONTACT US </div>
+</div>
+<div class="container">
+  <div class="image">
+    <div class="table">
+    <table>
+        <thead>
+            <tr>
+                <th>OFFICES</th>
+                <th>ADDRESS</th>
+                <th>TEL</th>
+                <th>FAX</th>
+            </tr>
+        </thead>
+        <tbody>
+                
+<tr>
+<td nowrap="">BAMBOUS</td>
+<td>Royal Road, Bambous</td>
+<td nowrap="">452-1526</td>
+<td nowrap="">452-1551</td>
+</tr>
+
+<tr>
+<td nowrap="">BEAU BASSIN</td>
+<td>J.F.Trotter Street, Beau Bassin</td>
+<td nowrap="">454-2910</td>
+<td nowrap="">-</td>
+</tr>
+
+<tr>
+<td nowrap="">BLACK RIVER</td>
+<td>Royal Road, La Mivoie, Black River</td>
+<td nowrap="">483-4145</td>
+<td nowrap="">483-5099</td>
+</tr>
+
+<tr>
+<td nowrap="">BRAMSTHAN</td>
+<td>Royal Road, Bramsthan</td>
+<td nowrap="">413-2589</td>
+<td nowrap="">413-3800</td>
+</tr>
+
+<tr>
+<td nowrap="">CUREPIPE</td>
+<td>Teste De Buch Street, Curepipe</td>
+<td nowrap="">601-1100</td>
+<td nowrap="">675-7963</td>
+</tr>
+
+<tr>
+<td nowrap="">FLACQ</td>
+<td>St Remi, Centre de Flacq</td>
+<td nowrap="">413-1352</td>
+<td nowrap="">-</td>
+</tr>
+
+<tr>
+<td nowrap="">GOODLANDS</td>
+<td>CEB Road, GOODLANDS</td>
+<td nowrap="">260 1700</td>
+<td nowrap="">283-7279</td>
+</tr>
+
+<tr>
+<td nowrap="">MAHEBOURG</td>
+<td>Cent Gaulettes Street, Mahebourg</td>
+<td nowrap="">631-3924</td>
+<td nowrap="">631-9470</td>
+</tr>
+
+<tr>
+<td nowrap="">MOKA</td>
+<td>Royal Road, Moka</td>
+<td nowrap="">433-4202</td>
+<td nowrap="">-</td>
+</tr>
+
+<tr>
+<td nowrap="">PAMPLEMOUSSES</td>
+<td>Royal Road, Pamplemousses</td>
+<td nowrap="">243-7525</td>
+<td nowrap="">243-3748</td>
+</tr>
+
+<tr>
+<td nowrap="">PORT LOUIS</td>
+<td>Sir Seewoosagur Ramgoolam Street, Port Louis</td>
+<td nowrap="">240-1004</td>
+<td nowrap="">-</td>
+</tr>
+
+<tr>
+<td nowrap="">PORT LOUIS</td>
+<td>Poudriere Street, Port Louis</td>
+<td nowrap="">210-9022</td>
+<td nowrap="">212-3301</td>
+</tr>
+
+<tr>
+<td nowrap="">QUATRE BORNES</td>
+<td>Avenue Osman, Quatre Bornes</td>
+<td nowrap="">467-0723</td>
+<td nowrap="">465-0446</td>
+</tr>
+
+<tr>
+<td nowrap="">RIVIERE DU REMPART</td>
+<td>Royal Road, Rivere Du Rempart</td>
+<td nowrap="">412-4295</td>
+<td nowrap="">-</td>
+</tr>
+
+<tr>
+<td nowrap="">RODRIGUES</td>
+<td>Port Mathurin, Rodrigues</td>
+<td nowrap="">832-0210</td>
+<td nowrap="">831-2405</td>
+</tr>
+
+<tr>
+<td nowrap="">ROSE HILL</td>
+<td>Vandermeersch Street, Rose Hill</td>
+<td nowrap="">401-2000</td>
+<td nowrap="">467-1167</td>
+</tr>
+
+<tr>
+<td nowrap="">ROSE-BELLE</td>
+<td>Centre Commercial du Vieux Moulin, Rose-Belle</td>
+<td nowrap="">627-9434</td>
+<td nowrap="">-</td>
+</tr>
+
+<tr>
+<td nowrap="">SOUILLAC</td>
+<td>Royal Road, Souillac</td>
+<td nowrap="">625-5544</td>
+<td nowrap="">625-5757</td>
+</tr>
+
+<tr>
+<td nowrap="">VACOAS</td>
+<td>St Paul Road, Vacoas</td>
+<td nowrap="">698-9600</td>
+<td nowrap="">696-4914</td>
+</tr>
+
+        </tbody>
+    </table>
+    
+  </div>
+</div>
+</div>
+<footer>
+  <div class="center">
+      Copyright &copy; 2019 All rights reserved ,www.CEB.com. 
+  </div>
+</footer>
+</body>
+</html>

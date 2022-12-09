@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>high consumption</title>
+     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #navbar {
+ 
+            position: relative;
+            top: 0px;
+            height: 90px;
+            width: 100%;
+            font-family: 'PT Serif', serif;
+            font-family: 'Xanh Mono', monospace;
+            display: flex;
+            color: goldenrod;
+            align-items: center;
+            border-bottom:5px black solid;
+          }
+          
+          #logo {
+            margin: 20px 25px;
+          }
+          
+          #logo img {
+            height: 80px;
+            width: 90px;
+            margin: 20px 20px;
+            /* background-color: white; */
+          }
+          
+          #logo img:hover {
+            height: 60px;
+            margin: 20px 20px;
+            
+          }
+          
+          /*  nav bar list style */
+          #navbar ul {
+            display: flex;
+            
+          }
+          
+          #navbar::before {
+            content: "";
+            background-color:white;
+            position: absolute;
+            top: 0px;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+            top: 0;
+            left: 0;
+          }
+          
+          #navbar ul {
+            display: flex;
+          }
+          
+          #navbar ul li {
+            /* color:blanchedalmond */
+            list-style: none;
+            font-size: 1.3rem;
+            
+          }
+          
+          #navbar ul li a {
+            color:black;
+            display: block;
+            padding: 3px 22px;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'Open Sans', sans-serif;
+            
+          }
+          
+          #navbar ul li a:hover {
+            color: goldenrod;
+            /* background-color: black 0.4; */
+          }
+          
+        
+        /* tables*/
+        .container {
+            width: 100%;
+            height: 100%;
+           
+           
+        }
+         .image{
+          background: url(Web_Photo_Editor.jpg) no-repeat center center/cover ;
+          
+          display: flex;
+           width: 100%;
+           height: auto;
+           justify-content: center;
+           
+            
+        }
+        .table{
+          
+        padding: 10px;
+        border-radius: 5px;
+        margin: 50px;
+            border: black 2px solid;
+            width: fit-content;
+            height: auto;
+            font-size:1.2em;
+            background:rgb(225, 198, 207);
+            line-height: 2;
+            border-collapse: collapse;
+        }
+        
+        .table tr,th,td{
+          border-collapse: collapse;
+            border-top: grey 2px solid;
+            padding: 10px;
+        }
+
+        tbody tr:hover{
+            background: linear-gradient(135deg, hsl(36,100%,50%) 10%, hsl(72,100%,50%) 60%, white 90%);
+        }   
+   
+        table {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            
+        }
+   
+        
+        table,
+        th,
+        td,
+ tr {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+        
+        }
+tfoot{
+    color:white;    
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}      
+thead{
+    color:white;  
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}      
+tbody{
+    background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
+}    
+
+tr:nth-child(even){
+    background-image: linear-gradient(toright, #fffbd5, #b20a2c);
+}
+
+/* footer */
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+    text-align: center;
+  }
+ /*HEADING*/
+ .heading{
+    height: 50px;
+ background-color:#fdb927;
+ display: flex;
+ justify-content: center;
+ padding-top: 10px;
+}
+.head{
+    font-size: 30px;
+    color: aliceblue;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+}
+  
+    </style> 
+
+</head>
+
+<body>
+      <!-- navigation bar  -->
+  <nav id="navbar">
+    <div id="logo">
+      <img src="logo.png" alt="CEB" width="70" height="70">
+    </div>
+    
+    <ul>
+      <li class="item"><a href="INDEX.html">Home </a></li>
+      <li class="item"><a href="login.html"> Login</a></li>
+      <li class="item"><a href="aboutus.html"> About Us </a></li>
+      <li class="item"><a href="contactus.html">Contact Us</a></li>
+    </ul>
+  </nav>
+  <div class="heading">
+    <div class="head">HIGH CONSUMPTION STATES</div>
+</div>
+    
+    <table>
+<thead>
+        <tr class="pink">
+            <th colspan="4">ANNUAL PER CAPITA CONSUMPTION OF ELECTRICITY STATEWISE</th>
+        </tr>
+</thead>
+<tbody>
+        <tr>
+            <td rowspan="1">STATES</td>
+            <th colspan="1">PER CAPITA CONSUMPTION</th>
+
+        </tr>
+
+        <tr>
+            <td>Chandigarh</td>
+            <td>1128</td>
+
+        </tr>
+        <tr>
+            <td>Delhi</td>
+            <td>1574</td>
+
+
+        </tr>
+        <tr>
+            <td>haryana</td>
+            <td>1975</td>
+
+
+        </tr>
+        <tr>
+            <td>Himachal Pradesh</td>
+            <td>1340</td>
+        </tr>
+        <tr>
+            <td>Jammu and kashmir</td>
+            <td>1282</td>
+        </tr>
+        <tr>
+            <td>Punjab</td>
+            <td>2028</td>
+        </tr>
+        <tr>
+            <td>Uttar Pradesh</td>
+            <td>585</td>
+        </tr>
+        <tr>
+            <td>Rajasthan</td>
+            <td>1166</td>
+        </tr>
+        <tr>
+            <td>Uttarkhandd</td>
+            <td>1454</td>
+        </tr>
+        <tr>
+            <td>Chattisgarh</td>
+            <td>2016</td>
+        </tr>
+        <tr>
+            <td>Gujarat</td>
+            <td>2279</td>
+        </tr>
+        <tr>
+            <td>Madya Pradesh</td>
+            <td>989</td>
+        </tr>
+        <tr>
+            <td>Uttar Pradesh</td>
+            <td>585</td>
+        </tr>
+        <tr>
+            <td>Maharastra</td>
+            <td>1307</td>
+        </tr>
+        <tr>
+            <td>Daman and Diu</td>
+            <td>7965</td>
+        </tr>
+        <tr>
+            <td>Goa</td>
+            <td>2465</td>
+        </tr>
+        <tr>
+            <td>Andra Pradesh</td>
+            <td>1319</td>
+        </tr>
+        <tr>
+            <td>Telegana</td>
+            <td>1551</td>
+        </tr>
+        <tr>
+            <td>karnataka</td>
+            <td>1367</td>
+        </tr>
+        <tr>
+            <td>Kerala</td>
+            <td>763</td>
+        </tr>
+        <tr>
+            <td>Tamil nadu</td>
+            <td>1847</td>
+        </tr>
+        <tr>
+            <td>West Bengal</td>
+            <td>665</td>
+        </tr>
+        <tr>
+            <td>Sikkim</td>
+            <td>806</td>
+        </tr>
+        <tr>
+            <td>Assam</td>
+            <td>339</td>
+        </tr>
+        <tr>
+            <td>Manipur</td>
+            <td>326</td>
+        </tr>
+        <tr>
+            <td>Tripua</td>
+            <td>392</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr >
+            <td colspan="2">powered by the ELECTRICITY board</td>
+            
+        </tr>
+
+    </tfoot>
+    </table>
+    <footer>
+        <div class="center">
+            Copyright &copy; 2019 All rights reserved ,www.CEB.com. 
+        </div>
+    </footer>
+</body>
+
+</html>

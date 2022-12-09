@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+    
+      *{
+        padding: 0px;
+        margin: 0px;
+        
+    }
+    /*  .bgimg{
+        position: absolute;
+        opacity: 0.5;
+        height:110% ;
+        width:100%;
+        
+        z-index: -10;
+        
+    }*/
+      /* navbar logo and image */
+      #navbar {
+       background:white;
+        position: relative;
+        top: 0px;
+        height: 90px;
+        width: 100%;
+        font-family: 'PT Serif', serif;
+        font-family: 'Xanh Mono', monospace;
+        display: flex;
+        align-items: center;
+      }
+      
+      #logo {
+        margin: 20px 25px;
+      }
+      
+      #logo img {
+        height: 80px;
+        width: 90px;
+        margin: 20px 20px;
+        /* background-color: white; */
+      }
+      
+      #logo img:hover {
+        height: 60px;
+        margin: 20px 20px;
+        
+      }
+      
+      /*  nav bar list style */
+      #navbar ul {
+        display: flex;
+      }
+      
+      #navbar::before {
+        content: "";
+        background-color:white;
+        position: absolute;
+        top: 0px;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.4;
+        top: 0;
+        left: 0;
+      }
+      
+      #navbar ul {
+        display: flex;
+      }
+      
+      #navbar ul li {
+        /* color:blanchedalmond */
+        list-style: none;
+        font-size: 1.3rem;
+      }
+      
+      #navbar ul li a {
+        color:black;
+        display: block;
+        padding: 3px 22px;
+        text-decoration: none;
+        font-weight: bold;
+        font-family: 'Open Sans', sans-serif;
+      }
+      
+      #navbar ul li a:hover {
+        color: goldenrod;
+        /* background-color: black 0.4; */
+       
+      }
+      
+   
+    .formdesign {
+        
+        font-size: 1.4rem;
+      margin: 1rem;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+
+    .formdesign input {
+        width: 50%;
+        padding: 0.8rem 0.8rem;
+        border: 2px black solid;
+        margin: 0.9 rem;
+        border-radius: 0.4px;
+        border-radius: 10px;
+
+    }
+
+
+    .formerror {
+        color: red;
+    }
+
+    .heading{
+        width: 100%;
+        height: 80px;
+     background-color:#fdb927;
+     display: flex;
+     justify-content: center;
+     margin-bottom: 1rem;
+   
+    }
+    .head{
+        font-size: 30px;
+        color: aliceblue;
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight:bold;
+        padding: 1rem;
+        
+    }
+    button{
+     border:2px black solid;
+     border-radius: 10px;
+        width: 150px;
+        height: 50px;
+    }
+    /* footer */
+.blockfont{
+border: 2px black solid;
+width: fit-content;
+padding:2px ;
+margin-top: 20px;
+background:rgb(200, 198, 198);}
+body{
+    background-image: linear-gradient( to left, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% ) ;
+}
+</style>
+
+<body>
+    
+    <nav id="navbar">
+       
+        <div id="logo">
+          <img src="logo.png" alt="CEB" width="70" height="70">
+        </div>
+        <ul>
+          <li class="item"><a href="INDEX.html">Home </a></li>
+          <li class="item"><a href="login.html"> Login</a></li>
+          <li class="item"><a href="aboutus.html"> About Us </a></li>
+          <li class="item"><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <!-- <img src="./reportafault.jpg" class="bgimg" ></img> -->
+  
+      
+      <div class="heading">
+        <div class="head">CUSTOMER LOGIN PORTAL</div>
+    </div>
+    
+<form aciton ="/myaction.php" name="myForm" onsubmit="return validateForm()" method="post">
+    <div class="formdesign" id="name">
+        Name: <input type="text" name="fname" required><b><span class="formerror"> </span></b>
+    </div>
+    <div class="formdesign" id="phone">
+        Phone: <input type="phone" name="fphone" required><b><span class="formerror"></span></b>
+    </div>
+    <div class="formdesign" >
+        E-Mail: <input type="email"  required>
+    </div>
+    <div class="formdesign">
+        Home Address: <input type="text" id="address" name="address" required maxlength="255">
+    </div>
+
+
+    <div class=formdesign id="landmarks">
+        <label for="landmarks">Landmarks:</label>
+        <input type="text" id="landmarks" name="landmarks" required maxlength="255">
+    </div>
+
+    <div class="formdesign" id="account">
+    M.C.Account number: <input type="number" name="account" min="21000" max="31000"required><b><span class="formerror"></span></b>
+    </div>
+
+    <div class="formdesign" id="pass">
+        Password: <input type="password" name="fpass" required><b><span class="formerror"></span></b>
+    </div>
+
+    <div class="formdesign" id="cpass">
+        Confirm Password: <input type="password" name="fcpass" required><b><span class="formerror"></span></b>
+    </div>
+
+   
+    <div class="formdesign">
+    <button type="submit"  name="input2" value="submit" onsubmit="return cansubmit()">SUBMIT</button>
+    <div class="blockfont">******your account confirmation will be done shortly******</div>
+</div>
+</form>
+
+
+
+<script>
+    function seterror(id, error) {
+        element = document.getElementById(id);
+        element.getElementsByClassName('formerror')[0].innerHTML = error;
+    }
+    function validateForm() {
+        var returnval =true;
+        var name = document.forms['myForm']["fname"].value;
+       
+        if (name.length<5){
+            seterror("name","*Length of name is too short ");
+            returnval=false;
+        }
+        var phone = document.forms['myForm']["fphone"].value;
+        if (phone.length != 10){
+            seterror("phone", "*Phone number should be of 10 digits!");
+            returnval = false;
+        }
+        var busphone = document.forms['myForm']["fphone"].value;
+        if (busphone.length != 10){
+            seterror("busphone", "*Phone number should be of 10 digits!");
+            returnval = false;
+        }
+            var password = document.forms['myForm']["fpass"].value;
+    if (password.length < 6){
+        seterror("pass", "*Password should be atleast 6 characters long!");
+        returnval = false;
+    }
+
+    var cpassword = document.forms['myForm']["fcpass"].value;
+    if (cpassword != password){
+        /*seterror("cpass", "*Password and Confirm password should match!");*/
+        alert("*Password and Confirm password should match!")
+        returnval = false;
+    }
+    return returnval;
+}
+
+</script>
+</body>
+
+</html>
